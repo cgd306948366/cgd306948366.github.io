@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DanmukuDemoSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	
+	<e:Image x="0" y="0" alpha="0.7" source="OKITA_jpg" width="100%" height="100%"/>
+	<e:Label text="Danmuku! GO!" x="60" y="450" size="32" stroke="2" strokeColor="0xFFBBFF"/>
+	<e:Label text="文字" x="30" y="540" stroke="1" strokeColor="0xFFBBFF"/>
+	<e:EditableText id="_Txt" width="200" height="36" prompt="请输入弹幕" 
+		x="135" y="540" textColor="0xA020F0"/>
+	<e:Label text="颜色" x="30" y="600" stroke="1" strokeColor="0xFFBBFF"/>
+	<e:Label text="字号" x="30" y="660" stroke="1" strokeColor="0xFFBBFF"/>
+	<e:Label text="速度" x="30" y="720" stroke="1" strokeColor="0xFFBBFF"/>
+	<e:HSlider id="_Size" width="150" height="34" x="135" y="660" />
+	<e:HSlider id="_Color" width="480" height="34" x="135" y="600"  />
+    <e:HSlider id="_Speed" width="150" height="34" x="135" y="720" minimum="0.06" pendingValue="0.01"/>
+	<e:Button id="_SendBtn" label="发送" horizontalCenter="0" y="800"/>
+	<e:Button id="_ClearBtn" label="清除" horizontalCenter="-200" y="800"/>
+	<e:Button id="_ResumeBtn" label="继续" horizontalCenter="200" y="800"/>
+	
+	<e:Group id="_DanmukuGroup" width="100%" height="374.67">
+		<e:Rect width="100%" height="372" alpha="0.7"/>
+	</e:Group>
+</e:Skin>
